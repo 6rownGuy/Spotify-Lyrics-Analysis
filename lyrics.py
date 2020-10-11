@@ -17,11 +17,17 @@ def get_song_lyrics(url):
     return "Lyrics not found."
 
 
+# def get_uri(spotify_object):
+#     now_playing_data = spotify_object.current_user_playing_track()
+#     return now_playing_data["item"]["uri"]
+
+
 def get_track_details(spotify_object):
     now_playing_data = spotify_object.current_user_playing_track()
     track_name = now_playing_data["item"]["name"]
     artist_name = now_playing_data["item"]["album"]["artists"][0]["name"]
-    return [track_name, artist_name]
+    track_uri = now_playing_data["item"]["uri"]
+    return [track_name, artist_name, track_uri]
 
 
 def generate_url(track_details):

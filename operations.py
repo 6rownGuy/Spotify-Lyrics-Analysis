@@ -1,4 +1,5 @@
 from lyrics import generate_object, anchor
+from sound_analysis import return_meters
 import os
 from lyrics_score import sentiment_meter as meter
 
@@ -9,9 +10,11 @@ def print_details(track_details):
     os.system("cls" if os.name == "nt" else "clear")
     f = open(f"lyrics//{track_details[0].lower()} lyrics.txt", "r")
 
-    print("\nTrack Name: ", track_details[0])
-    print("\nArtist Name: ", track_details[1])
-    print("\nVibe check: ", meter(track_details[0].lower()))
+    print("\nTrack Name:   ", track_details[0])
+    print("\nArtist Name:  ", track_details[1])
+    print("\nVibe Check:   ", meter(track_details[0].lower()))
+    print("\nGroove Check: ", return_meters(track_details, spotify_object, 1))
+    print("\nSkip or Keep: ", return_meters(track_details, spotify_object, 2))
 
     print("\nLYRICS\n\n")
     lyrics = f.read()
