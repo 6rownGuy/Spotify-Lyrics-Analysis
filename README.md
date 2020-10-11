@@ -16,6 +16,6 @@ I am planning to add the funtionality to train on user's liked songs.
 
 ## Instructions
 - A spotify account.
-- Go [here]('https://developer.spotify.com/') and log in or sign up to Spotify.
+- Go [here](https://developer.spotify.com/) and log in or sign up to Spotify.
 - Create an app and get your client ID, client secret, your Spotify username and the redirect URL.
 - Place all that data in the `credentials.py` file.
