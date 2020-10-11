@@ -1,6 +1,6 @@
 # Spotify Live Song Analysis
 
-A simple python program to display live analysis of the currently playing music on your Spotify.
+A simple python program to display live analysis of the currently playing music on your Spotify using the Spotify API and ML.
 
 ## Features
 - Displays track name, artist name.
