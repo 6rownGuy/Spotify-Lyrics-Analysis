@@ -10,7 +10,7 @@ A simple python program to display live analysis of the currently playing music 
 - Displays the lyrics
 
 ## Note
-- The lyrics is being fetched from MetroLyrics, so it's availabilty deoends on whether it's available on their servers or not.
+- The lyrics is being fetched from MetroLyrics, so it's availabilty depends on whether it's available on their servers or not.
 - Currently the ML model is trained on the [Spotify Song Attributes](https://www.kaggle.com/geomack/spotifyclassification) dataset, so the SKIP OR KEEP meter might not be wholly accurate.
 I am planning to add the funtionality to train on user's liked songs.
 
